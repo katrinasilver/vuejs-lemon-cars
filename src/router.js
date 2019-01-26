@@ -15,8 +15,8 @@ export default new Router({
       component: Home
     },
     {
-      path: '/cars/:id/:vin',
-      name: 'car',
+      path: '/cars/:id',
+      name: 'cars',
       component: Cars
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route

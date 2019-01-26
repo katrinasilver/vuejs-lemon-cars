@@ -19,8 +19,7 @@
 
     data() {
       return {
-        cars: [],
-        showError: false
+        cars: []
       }
     },
 
@@ -36,7 +35,6 @@
           this.cars = response.data
         } catch(err) {
           console.log(err)
-          showError: true
         }
       }
     }

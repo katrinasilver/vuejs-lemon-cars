@@ -5,7 +5,7 @@
       <h3>{{ tag_line }}</h3>
       <hr>
       <p class="lead content">{{ description.slice(0, 100) }}...</p>
-      <router-link class="btn btn-success btn-lg" :to="`/cars/${ id }/${vin}`">Learn More</router-link>
+      <router-link class="btn btn-success btn-lg" :to="{ name: 'cars', params: { id } }">Learn More</router-link>
     </div>
   </div>
 </template>
