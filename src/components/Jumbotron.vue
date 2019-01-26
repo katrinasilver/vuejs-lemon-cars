@@ -5,7 +5,7 @@
       <h3>{{ tag_line }}</h3>
       <hr>
       <p class="lead content">{{ description.slice(0, 250) }}...</p>
-      <a class="btn btn-success btn-lg" role="button">Learn more</a>
+      <router-link class="btn btn-success btn-lg" :to="`/cars/${ id }/${vin}`">Learn More</router-link>
     </div>
   </div>
 </template>
@@ -14,10 +14,12 @@
 export default {
   name: 'Jumbotron',
   props: {
+    id: Number,
     product_name : String,
     main_img : String,
     description: String,
-    tag_line : String
+    tag_line : String,
+    vin: String
   }
 }
 </script>
@@ -31,7 +33,10 @@ export default {
 
   .meta {
     background: transparentize(#000000, .5);
-    max-width: 45%;
+
+    @media only screen and (min-width: 960px) {
+      max-width: 45%;
+    }
   }
 
   hr {

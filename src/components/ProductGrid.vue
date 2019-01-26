@@ -9,8 +9,7 @@
       <div :style="{ 'text-decoration': 'line-through' }" class="card-text text-muted">${{ price }}</div>
       <h4 class="card-text text-danger">${{ (price - (price * discount)).toFixed(2) }}</h4>
       <div class="mb-3 small">VIN: {{ vin }}</div>
-      <!-- <button class="btn btn-success">See More</button> -->
-      <router-link class="btn btn-success" :to="`/cars/${ id }`">See More</router-link>
+      <router-link class="btn btn-success" :to="`/cars/${ id }/${ vin }`">See More</router-link>
     </div>
   </div>
 </template>

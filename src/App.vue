@@ -30,7 +30,7 @@
 
     methods: {
       async fetchCars() {
-        const url = `https://my.api.mockaroo.com/cars.json?key=5833a0e0`
+        const url = `http://localhost:3000/cars`
         try {
           let response = await axios.get(url)
           this.cars = response.data

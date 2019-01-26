@@ -2,10 +2,12 @@
   <div class="home">
     <transition name="slideRight">
       <Jumbotron class="mb-0" v-cloak v-for="car in cars.slice(0, 1)" :key="car.id"
+        :id="car.id"
         :main_img="car.main_img"
         :product_name="car.product_name"
         :tag_line="car.tag_line"
         :description="car.description"
+        :vin="car.vin"
       />
     </transition>
     <div is="transition-group" name="slideUp" v-cloak class="products row">
