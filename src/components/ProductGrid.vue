@@ -22,7 +22,7 @@
           Financing Available
         </span>
       </div>
-      <router-link class="btn btn-outline-success" :to="{ name: 'cars', params: { id } }">See Details</router-link>
+      <router-link class="btn btn-outline-success" :to="{ name: 'cars', params: { id, vin } }">See Details</router-link>
     </div>
   </div>
 </template>

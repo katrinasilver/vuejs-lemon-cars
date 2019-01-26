@@ -1,4 +1,4 @@
-# cheap-cars
+# Lemon Autos | Vuejs Independent Study
 
 ## Project setup
 ```

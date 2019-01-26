@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home'
-import Cars from './views/Cars'
+import Home from './pages/Home'
+import Cars from './pages/Cars'
 
 Vue.use(Router)
 
@@ -15,7 +15,7 @@ export default new Router({
       component: Home
     },
     {
-      path: '/cars/:id',
+      path: '/cars/:id/:vin',
       name: 'cars',
       component: Cars
       // route level code-splitting
