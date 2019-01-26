@@ -4,7 +4,7 @@
       <h1 class="display-4">{{ product_name }}</h1>
       <h3>{{ tag_line }}</h3>
       <hr>
-      <p class="lead content">{{ description.slice(0, 250) }}...</p>
+      <p class="lead content">{{ description.slice(0, 100) }}...</p>
       <router-link class="btn btn-success btn-lg" :to="`/cars/${ id }/${vin}`">Learn More</router-link>
     </div>
   </div>
@@ -25,11 +25,17 @@ export default {
 </script>
 
 <style lang="scss">
+
 .jumbotron {
   background-size: cover;
   background-position: center;
+  border-radius: 0;
   height: fill-available;
-  margin-top: -4rem;
+
+  @media only screen and (min-width: 575px) {
+    height: 750px;
+    margin-top: -4rem;
+  }
 
   .meta {
     background: transparentize(#000000, .5);
@@ -43,4 +49,5 @@ export default {
     background: #ffff;
   }
 }
+
 </style>

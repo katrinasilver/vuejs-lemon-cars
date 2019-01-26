@@ -2,378 +2,419 @@
   "cars": [
     {
       "id": 1,
-      "year": 1997,
-      "make": "BMW",
-      "model": "5 Series",
-      "product_name": "1997 BMW 5 Series",
-      "vin": "WAUUL98E66A627606",
+      "year": 2002,
+      "make": "Pontiac",
+      "model": "Sunfire",
+      "product_name": "2002 Pontiac Sunfire",
+      "vin": "WBASP2C5XBC284419",
       "colors_hex": [
-        "#b421de",
-        "#2f12f8",
-        "#03e78d"
+        "#380d1a",
+        "#68394e",
+        "#4d9612"
       ],
       "main_img": "https://img.autobytel.com/car-reviews/autobytel/131142-japanese-supercars-past-present-and-future/2017_Nissan_GT_R_Track_Silver.jpg",
       "product_imgs": [
+        "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg",
         "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg",
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg",
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg"
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg"
       ],
-      "price": 3932.09,
-      "discount": 0.29,
-      "tag_line": "Triple-buffered non-volatile interface",
-      "description": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
+      "price": 7344.39,
+      "discount": 0.25,
+      "tag_line": "Intuitive user-facing synergy",
+      "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
       "financing": false,
-      "downpayment": 0.2
+      "downpayment": 0.2,
+      "mileage": 46207
     },
     {
       "id": 2,
-      "year": 2006,
-      "make": "Ford",
-      "model": "Escape",
-      "product_name": "2006 Ford Escape",
-      "vin": "KMHHU6KJ3FU435110",
+      "year": 1985,
+      "make": "Buick",
+      "model": "Somerset",
+      "product_name": "1985 Buick Somerset",
+      "vin": "3VW1K7AJ6BM594606",
       "colors_hex": [
-        "#a1efde",
-        "#6d180a",
-        "#fdf17d"
+        "#e61f08",
+        "#f0b57c",
+        "#83f25c"
       ],
       "main_img": "https://img.autobytel.com/2019/acura/ilx/2-800-oemexteriorfront1300-89658.jpg",
       "product_imgs": [
         "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg",
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg",
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg"
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg",
+        "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg"
       ],
-      "price": 10989.51,
-      "discount": 0.3,
-      "tag_line": "Pre-emptive attitude-oriented solution",
-      "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-      "financing": true,
-      "downpayment": 0.2
+      "price": 8439.05,
+      "discount": 0.26,
+      "tag_line": "Devolved actuating portal",
+      "description": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
+      "financing": false,
+      "downpayment": 0.2,
+      "mileage": 42997
     },
     {
       "id": 3,
-      "year": 2008,
-      "make": "Maserati",
-      "model": "GranTurismo",
-      "product_name": "2008 Maserati GranTurismo",
-      "vin": "1G6KE54Y02U396243",
+      "year": 1993,
+      "make": "Chevrolet",
+      "model": "G-Series G20",
+      "product_name": "1993 Chevrolet G-Series G20",
+      "vin": "1G6AJ1R3XF0232525",
       "colors_hex": [
-        "#c16492",
-        "#c1fbea",
-        "#ac317c"
+        "#8b78f2",
+        "#6f2496",
+        "#f9fb20"
       ],
       "main_img": "https://img.autobytel.com/2019/acura/rlx-sport-hybrid/2-800-oemexteriorfront1300-88498.jpg",
       "product_imgs": [
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg",
         "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg",
-        "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg",
-        "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg"
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg"
       ],
-      "price": 12217.33,
-      "discount": 0.28,
-      "tag_line": "Realigned client-driven access",
-      "description": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
+      "price": 6554.82,
+      "discount": 0.3,
+      "tag_line": "Compatible 5th generation parallelism",
+      "description": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
       "financing": false,
-      "downpayment": 0.2
+      "downpayment": 0.2,
+      "mileage": 88698
     },
     {
       "id": 4,
-      "year": 2007,
-      "make": "Infiniti",
-      "model": "G35",
-      "product_name": "2007 Infiniti G35",
-      "vin": "1FMHK7B82BG281892",
+      "year": 2002,
+      "make": "Dodge",
+      "model": "Intrepid",
+      "product_name": "2002 Dodge Intrepid",
+      "vin": "WBAPM7C54AE894072",
       "colors_hex": [
-        "#9345e6",
-        "#00ee54",
-        "#728739"
+        "#1ca495",
+        "#9a655c",
+        "#fa5d58"
       ],
       "main_img": "https://img.autobytel.com/2019/audi/a3/2-800-oemexteriorfront1300-89668.jpg",
       "product_imgs": [
         "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg",
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg",
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg"
+        "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg",
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg"
       ],
-      "price": 5536.34,
-      "discount": 0.25,
-      "tag_line": "Assimilated systematic middleware",
-      "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
-      "financing": false,
-      "downpayment": 0.2
+      "price": 4363.04,
+      "discount": 0.29,
+      "tag_line": "Automated tangible success",
+      "description": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
+      "financing": true,
+      "downpayment": 0.2,
+      "mileage": 135839
     },
     {
       "id": 5,
-      "year": 2006,
-      "make": "Hummer",
-      "model": "H2",
-      "product_name": "2006 Hummer H2",
-      "vin": "WAUHE78P69A452408",
+      "year": 1995,
+      "make": "Honda",
+      "model": "Odyssey",
+      "product_name": "1995 Honda Odyssey",
+      "vin": "SCBZB25E92C654629",
       "colors_hex": [
-        "#41dcf9",
-        "#7c5b66",
-        "#5dd856"
+        "#4073f2",
+        "#2667bc",
+        "#08aa1b"
       ],
       "main_img": "https://img.autobytel.com/2019/audi/a4/2-800-oemexteriorfront1300-89663.jpg",
       "product_imgs": [
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg",
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg",
+        "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg",
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg",
         "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg"
       ],
-      "price": 6684.05,
-      "discount": 0.26,
-      "tag_line": "Object-based intangible protocol",
-      "description": "In congue. Etiam justo. Etiam pretium iaculis justo.",
+      "price": 5627.58,
+      "discount": 0.28,
+      "tag_line": "Robust user-facing infrastructure",
+      "description": "In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
       "financing": true,
-      "downpayment": 0.2
+      "downpayment": 0.2,
+      "mileage": 73244
     },
     {
       "id": 6,
-      "year": 1985,
-      "make": "Buick",
-      "model": "Skylark",
-      "product_name": "1985 Buick Skylark",
-      "vin": "JA32X8HW5EU754960",
+      "year": 2006,
+      "make": "Infiniti",
+      "model": "G",
+      "product_name": "2006 Infiniti G",
+      "vin": "WBAVB33536P635199",
       "colors_hex": [
-        "#29590f",
-        "#6c093d",
-        "#280eb1"
+        "#e52433",
+        "#5b843a",
+        "#817b33"
       ],
       "main_img": "https://img.autobytel.com/2019/buick/enclave/2-800-oemexteriorfront1300-87398.jpg",
       "product_imgs": [
-        "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg",
-        "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg",
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg",
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg",
         "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg"
       ],
-      "price": 6221.44,
-      "discount": 0.27,
-      "tag_line": "Fully-configurable methodical superstructure",
-      "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
+      "price": 7098.26,
+      "discount": 0.26,
+      "tag_line": "Secured disintermediate database",
+      "description": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
       "financing": false,
-      "downpayment": 0.2
+      "downpayment": 0.2,
+      "mileage": 29408
     },
     {
       "id": 7,
-      "year": 1992,
-      "make": "Honda",
-      "model": "Prelude",
-      "product_name": "1992 Honda Prelude",
-      "vin": "1B3AZ6EZ0AV207627",
+      "year": 2000,
+      "make": "Toyota",
+      "model": "Echo",
+      "product_name": "2000 Toyota Echo",
+      "vin": "KL4CJCSB2DB036495",
       "colors_hex": [
-        "#a80513",
-        "#587f1d",
-        "#53f637"
+        "#6be65c",
+        "#89e9c7",
+        "#286d2f"
       ],
       "main_img": "https://img.autobytel.com/2019/ford/ecosport/2-800-oemexteriorfront1300-88597.jpg",
       "product_imgs": [
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg",
         "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg",
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg",
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg"
+        "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg"
       ],
-      "price": 5688.24,
-      "discount": 0.3,
-      "tag_line": "Distributed actuating open architecture",
-      "description": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
+      "price": 7417.58,
+      "discount": 0.28,
+      "tag_line": "Cross-group impactful archive",
+      "description": "Phasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
       "financing": true,
-      "downpayment": 0.2
+      "downpayment": 0.2,
+      "mileage": 79384
     },
     {
       "id": 8,
-      "year": 1961,
-      "make": "Pontiac",
-      "model": "Tempest",
-      "product_name": "1961 Pontiac Tempest",
-      "vin": "WBALZ5C53CD344004",
+      "year": 2000,
+      "make": "Plymouth",
+      "model": "Prowler",
+      "product_name": "2000 Plymouth Prowler",
+      "vin": "WAUDH74F67N116847",
       "colors_hex": [
-        "#188b7f",
-        "#99329e",
-        "#e77eab"
+        "#2f37f6",
+        "#41bb2f",
+        "#9083a7"
       ],
       "main_img": "https://img.autobytel.com/2019/gmc/terrain/2-800-oemexteriorfront1300-87607.jpg",
       "product_imgs": [
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg",
         "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg",
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg",
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg"
+        "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg"
       ],
-      "price": 3963.57,
-      "discount": 0.29,
-      "tag_line": "Stand-alone bottom-line groupware",
-      "description": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
+      "price": 6159.99,
+      "discount": 0.27,
+      "tag_line": "Expanded dynamic focus group",
+      "description": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
       "financing": false,
-      "downpayment": 0.2
+      "downpayment": 0.2,
+      "mileage": 36844
     },
     {
       "id": 9,
-      "year": 2007,
+      "year": 1992,
       "make": "Chevrolet",
-      "model": "Equinox",
-      "product_name": "2007 Chevrolet Equinox",
-      "vin": "WBANV13548B659149",
+      "model": "Suburban 1500",
+      "product_name": "1992 Chevrolet Suburban 1500",
+      "vin": "3C63DRAL5CG035476",
       "colors_hex": [
-        "#708b2a",
-        "#ac4a7c",
-        "#2de54d"
+        "#7adf17",
+        "#66dd21",
+        "#5598b0"
       ],
       "main_img": "https://img.autobytel.com/2019/hyundai/kona/2-800-oemexteriorfront1300-89515.jpg",
       "product_imgs": [
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg",
         "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg",
-        "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg",
-        "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg"
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg"
       ],
-      "price": 9064.98,
-      "discount": 0.25,
-      "tag_line": "Re-engineered context-sensitive superstructure",
-      "description": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
-      "financing": true,
-      "downpayment": 0.2
+      "price": 10826.97,
+      "discount": 0.29,
+      "tag_line": "Versatile even-keeled portal",
+      "description": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
+      "financing": false,
+      "downpayment": 0.2,
+      "mileage": 77193
     },
     {
       "id": 10,
-      "year": 2002,
-      "make": "Mercury",
-      "model": "Grand Marquis",
-      "product_name": "2002 Mercury Grand Marquis",
-      "vin": "2G4WN58C281199927",
+      "year": 2003,
+      "make": "Honda",
+      "model": "Element",
+      "product_name": "2003 Honda Element",
+      "vin": "WAUFGAFC6FN528857",
       "colors_hex": [
-        "#c75518",
-        "#1c3317",
-        "#fb0378"
+        "#7264c7",
+        "#efa962",
+        "#fca5be"
       ],
       "main_img": "https://img.autobytel.com/2019/infiniti/qx30/2-800-oemexteriorfront1300-89953.jpg",
       "product_imgs": [
         "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg",
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg",
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg"
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg",
+        "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg"
       ],
-      "price": 5927.21,
-      "discount": 0.28,
-      "tag_line": "Upgradable 6th generation open architecture",
-      "description": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
-      "financing": true,
-      "downpayment": 0.2
+      "price": 8007.39,
+      "discount": 0.29,
+      "tag_line": "Future-proofed analyzing pricing structure",
+      "description": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
+      "financing": false,
+      "downpayment": 0.2,
+      "mileage": 97917
     },
     {
       "id": 11,
-      "year": 1987,
-      "make": "Lincoln",
-      "model": "Continental",
-      "product_name": "1987 Lincoln Continental",
-      "vin": "5J8TB3H51EL985442",
+      "year": 1996,
+      "make": "Mazda",
+      "model": "B-Series",
+      "product_name": "1996 Mazda B-Series",
+      "vin": "WAUDH98E78A016360",
       "colors_hex": [
-        "#8577dc",
-        "#754b57",
-        "#cdd88e"
+        "#544855",
+        "#3445e0",
+        "#c9ff18"
       ],
       "main_img": "https://img.autobytel.com/car-reviews/autobytel/130863-sporty-coupes/2016-Chevrolet-Camaro-on-road-blue.jpg",
       "product_imgs": [
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg",
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg",
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg",
+        "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg",
         "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg"
       ],
-      "price": 6759.96,
+      "price": 3917.18,
       "discount": 0.29,
-      "tag_line": "Mandatory interactive open system",
-      "description": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
+      "tag_line": "Phased web-enabled infrastructure",
+      "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
       "financing": true,
-      "downpayment": 0.2
+      "downpayment": 0.2,
+      "mileage": 79148
     },
     {
       "id": 12,
-      "year": 1997,
-      "make": "Pontiac",
-      "model": "Sunfire",
-      "product_name": "1997 Pontiac Sunfire",
-      "vin": "WAULFAFR8EA279235",
+      "year": 1998,
+      "make": "Subaru",
+      "model": "Legacy",
+      "product_name": "1998 Subaru Legacy",
+      "vin": "WBSBR93454P340770",
       "colors_hex": [
-        "#77bd71",
-        "#cd5021",
-        "#362aa6"
+        "#07cc9b",
+        "#68bc97",
+        "#e1c0b5"
       ],
       "main_img": "https://img.autobytel.com/car-reviews/autobytel/10024-best-two-door-cars/ChallengerEdit.jpg",
       "product_imgs": [
         "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg",
-        "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg",
-        "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg"
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg",
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg"
       ],
-      "price": 3893.14,
-      "discount": 0.29,
-      "tag_line": "Digitized executive infrastructure",
-      "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
+      "price": 8889.95,
+      "discount": 0.26,
+      "tag_line": "Vision-oriented incremental local area network",
+      "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
       "financing": false,
-      "downpayment": 0.2
+      "downpayment": 0.2,
+      "mileage": 34343
     },
     {
       "id": 13,
-      "year": 2011,
-      "make": "Chevrolet",
-      "model": "Malibu",
-      "product_name": "2011 Chevrolet Malibu",
-      "vin": "WAUAH74FX7N040049",
+      "year": 1994,
+      "make": "Porsche",
+      "model": "968",
+      "product_name": "1994 Porsche 968",
+      "vin": "JTEBU5JR8A5480635",
       "colors_hex": [
-        "#ba1b98",
-        "#15ea2b",
-        "#d38b3e"
+        "#4cdcf0",
+        "#2a96fb",
+        "#c429bf"
       ],
       "main_img": "https://img.autobytel.com/car-reviews/autobytel/131579-10-cars-with-autopilot/2016-Tesla-Model-S-on-road-front-grille.jpg",
       "product_imgs": [
         "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg",
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg",
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg"
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg",
+        "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg"
       ],
-      "price": 6182.98,
-      "discount": 0.26,
-      "tag_line": "Intuitive intangible synergy",
-      "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
+      "price": 9972.12,
+      "discount": 0.3,
+      "tag_line": "User-friendly heuristic migration",
+      "description": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
       "financing": false,
-      "downpayment": 0.2
+      "downpayment": 0.2,
+      "mileage": 135413
     },
     {
       "id": 14,
-      "year": 1992,
-      "make": "GMC",
-      "model": "2500 Club Coupe",
-      "product_name": "1992 GMC 2500 Club Coupe",
-      "vin": "2C3CCAJT2CH689434",
+      "year": 2002,
+      "make": "Audi",
+      "model": "S4",
+      "product_name": "2002 Audi S4",
+      "vin": "WA1WKAFP9CA122458",
       "colors_hex": [
-        "#1383b8",
-        "#836d6b",
-        "#a1b0f6"
+        "#9288c4",
+        "#b8cc11",
+        "#ddf494"
       ],
       "main_img": "https://img.autobytel.com/2015/lexus/rc-350/2-800-oemexteriorfront1300-76451.jpg",
       "product_imgs": [
+        "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg",
         "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg",
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg",
-        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg"
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg"
       ],
-      "price": 2831.99,
-      "discount": 0.29,
-      "tag_line": "Re-engineered solution-oriented hub",
-      "description": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
+      "price": 8102.92,
+      "discount": 0.28,
+      "tag_line": "Operative multi-state utilisation",
+      "description": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
       "financing": true,
-      "downpayment": 0.2
+      "downpayment": 0.2,
+      "mileage": 125416
     },
     {
       "id": 15,
-      "year": 2010,
-      "make": "Acura",
-      "model": "TSX",
-      "product_name": "2010 Acura TSX",
-      "vin": "WBAFR9C55BC641803",
+      "year": 1987,
+      "make": "Ford",
+      "model": "Escort",
+      "product_name": "1987 Ford Escort",
+      "vin": "JTDKN3DP0D3758945",
       "colors_hex": [
-        "#a374ea",
-        "#dd9fee",
-        "#326822"
+        "#9005a6",
+        "#e4beef",
+        "#fa4fdd"
       ],
       "main_img": "https://img.autobytel.com/car-reviews/autobytel/130988-10-most-comfortable-compact-cars/2016-Chevrolet-Cruze.jpg",
       "product_imgs": [
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg",
         "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg",
-        "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg",
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg"
+      ],
+      "price": 9756.52,
+      "discount": 0.29,
+      "tag_line": "Profound user-facing implementation",
+      "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
+      "financing": true,
+      "downpayment": 0.2,
+      "mileage": 50258
+    },
+    {
+      "id": 16,
+      "year": 1992,
+      "make": "Ford",
+      "model": "Mustang",
+      "product_name": "1992 Ford Mustang",
+      "vin": "WAUUL78E45A797904",
+      "colors_hex": [
+        "#774dea",
+        "#bad288",
+        "#9d18bf"
+      ],
+      "main_img": "https://img.autobytel.com/car-reviews/autobytel/130987-10-biggest-engines-in-the-world/2016-lamborghini-centenario-lp-770-4.jpg",
+      "product_imgs": [
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_dashboard.jpg",
+        "https://cars.usnews.com/static/images/Auto/izmo/i5054/2015_toyota_corolla_frontseat.jpg",
         "https://www.priorityinfiniti.com/inventoryphotos/347/2t1burhe5fc454678/ip/27.jpg"
       ],
-      "price": 4264.23,
-      "discount": 0.27,
-      "tag_line": "Universal encompassing throughput",
-      "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
-      "financing": true,
-      "downpayment": 0.2
+      "price": 8024.24,
+      "discount": 0.28,
+      "tag_line": "Multi-channelled reciprocal contingency",
+      "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
+      "financing": false,
+      "downpayment": 0.2,
+      "mileage": 83379
     }
   ]
 }

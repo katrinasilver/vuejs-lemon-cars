@@ -2,7 +2,7 @@
   <div id="app">
     <Header />
     <router-view :cars="cars"/>
-    <footer class="bg-dark text-muted p-5 text-center">&copy; 2019 Cheap Cars</footer>
+    <footer class="bg-dark text-muted p-4 text-center">&copy; 2019 Lemon Autos // Our cars are more than just lemons!</footer>
   </div>
 </template>
 
@@ -11,7 +11,7 @@
   import axios from 'axios'
 
   export default {
-    name: 'cheap-cars',
+    name: 'lemon-autos',
 
     components: {
       Header
