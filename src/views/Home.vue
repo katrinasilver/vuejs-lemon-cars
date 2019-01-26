@@ -1,13 +1,16 @@
 <template>
   <div class="home">
-    <Jumbotron class="mb-0" v-for="car in cars.slice(0, 1)" :key="car.id"
-      :main_img="car.main_img"
-      :product_name="car.product_name"
-      :tag_line="car.tag_line"
-      :description="car.description"
-    />
-    <div class="products row">
+    <transition name="slideRight">
+      <Jumbotron class="mb-0" v-cloak v-for="car in cars.slice(0, 1)" :key="car.id"
+        :main_img="car.main_img"
+        :product_name="car.product_name"
+        :tag_line="car.tag_line"
+        :description="car.description"
+      />
+    </transition>
+    <div is="transition-group" name="slideUp" v-cloak class="products row">
       <ProductGrid v-for="car in cars.slice(1, 16)" :key="car.id"
+        :id="car.id"
         :main_img="car.main_img"
         :product_name="car.product_name"
         :price="car.price"
@@ -42,4 +45,28 @@ export default {
       border-radius: 0;
     }
   }
+
+  .slideUp-enter,
+  .slideUp-leave-to {
+    transform: translateY(150px) rotate(0deg);
+    opacity: 0;
+  }
+
+  .slideUp-enter-active,
+  .slideUp-leave-active {
+    transition: all .3s linear;
+  }
+
+  .slideRight-leave-to,
+  .slideRight-enter {
+    transform: translate(150px) rotate(0deg);
+    opacity: 0;
+  }
+
+  .slideRight-enter-active,
+  .slideRight-leave-active {
+    transition: all .3s ease;
+  }
+
+
 </style>

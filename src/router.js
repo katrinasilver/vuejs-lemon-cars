@@ -15,7 +15,7 @@ export default new Router({
       component: Home
     },
     {
-      path: '/cars',
+      path: '/cars/:id',
       name: 'cars',
       component: Cars
       // route level code-splitting

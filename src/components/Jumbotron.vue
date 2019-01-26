@@ -1,10 +1,10 @@
 <template>
   <div class="jumbotron text-white" :style="{'background-image': `url('${main_img}')`}">
-    <div class="meta p-4 mt-5">
+    <div v-cloak class="meta p-4 mt-5">
       <h1 class="display-4">{{ product_name }}</h1>
       <h3>{{ tag_line }}</h3>
       <hr>
-      <p class="lead content">{{ description.slice(0, 200) }}...</p>
+      <p class="lead content">{{ description.slice(0, 250) }}...</p>
       <a class="btn btn-success btn-lg" role="button">Learn more</a>
     </div>
   </div>
