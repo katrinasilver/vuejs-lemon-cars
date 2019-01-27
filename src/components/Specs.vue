@@ -5,11 +5,11 @@
       <tbody>
         <tr>
           <th scope="row">Transmission:</th>
-          <td>{{ transmission }}</td>
+          <td>{{ transmission }} Transmission</td>
         </tr>
         <tr>
           <th scope="row">Type:</th>
-          <td>{{ doors }}, {{ type }}</td>
+          <td>{{ doors }}, {{ type }}, {{ tag_line }}</td>
         </tr>
         <tr>
           <th scope="row">Mileage:</th>
@@ -21,13 +21,15 @@
         </tr>
       </tbody>
     </table>
-    <small v-show="getFinancing" class="text-white-50">**Based on original price and credit-worthiness, excludes taxes &amp; fees.</small>
+    <p class="small content">{{ description }}</p>
+    <small v-show="getFinancing" class="text-white-50">**Based on original price and excludes taxes &amp; fees.</small>
 
   </div>
 </template>
+
 <script>
 export default {
-  props: ['transmission', 'downpayment', 'doors', 'type', 'discount', 'price', 'mileage', 'financing'],
+  props: ['description', 'tag_line', 'transmission', 'downpayment', 'doors', 'type', 'discount', 'price', 'mileage', 'financing'],
   name: 'Specs',
   computed: {
     getDownpayment() {

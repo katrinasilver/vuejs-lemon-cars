@@ -1,6 +1,7 @@
 <template>
+
   <transition name="slideUp">
-    <div v-cloak class="card border-white p-0 m-0 col-lg-4 col-md-6 col-sm-12">
+    <div class="card border-white p-0 m-0 col-lg-4 col-md-6 col-sm-12 shadow-sm">
       <img :src="main_img" class="card-img-top" :alt="product_name">
       <div class="bg-secondary card-footer text-center shadow-sm">
         <h4 class="text-white mb-0">{{ product_name }}</h4>
@@ -8,7 +9,7 @@
           VIN: {{ vin }}
         </div>
       </div>
-      <div class="card-body p-4">
+      <div class="card-body bg-light p-4">
         <p class="card-title text-success lead">{{ `${getDiscount}% Off Sticker Price` }}</p>
         <div :style="{ 'text-decoration': 'line-through' }" class="card-text text-muted">
           {{ price.toLocaleString('en-IN', { style: 'currency', currency: 'USD'}) }}</div>
@@ -33,6 +34,7 @@
       </div>
     </div>
   </transition>
+
 </template>
 
 <script>
@@ -66,7 +68,7 @@ export default {
 
 <style lang="scss" scoped>
   .card {
-  border-radius: 0;
+    border-radius: 0;
 
   .card-img-top {
     border-radius: 0;

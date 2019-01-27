@@ -1,19 +1,25 @@
 <template>
   <div id="app" class="bg-light">
-    <Header />
-    <router-view />
-    <footer class="bg-dark text-muted p-4 text-center">&copy; 2019 Lemon Autos // Our cars are more than just lemons!</footer>
+    <transition :name="transitionName">
+      <router-view />
+    </transition>
   </div>
 </template>
 
 <script>
-  import Header from '@/components/Header'
-
   export default {
     name: 'lemon-autos',
-
-    components: {
-      Header
+    data() {
+      return {
+        transitionName: ''
+      }
+    },
+    watch: {
+      '$route' (to, from) {
+        const toDepth = to.path.split('/').length
+        const fromDepth = from.path.split('/').length
+        this.transitionName = toDepth < fromDepth ? 'slideRight' : 'slideUp'
+      }
     }
   }
 </script>
@@ -23,7 +29,19 @@
   @import '../sass/custom.scss';
 
   [v-cloak] {
-    display: none;
+    opacity: 0;
+    transition: all .3s linear;
+    visibility: hidden;
+  }
+
+  header.navbar {
+    background: #252525;
+
+    @media only screen and (min-width: 992px) {
+      input {
+        width: 60%;
+      }
+    }
   }
 
   body {
@@ -32,7 +50,7 @@
 
   .slideUp-enter,
   .slideUp-leave-to {
-    transform: translateY(100px) rotate(0deg);
+    transform: translateY(100px);
     opacity: 0;
   }
 
@@ -43,7 +61,7 @@
 
   .slideRight-leave-to,
   .slideRight-enter {
-    transform: translateX(100px) rotate(0deg);
+    transform: translateX(50px);
     opacity: 0;
   }
 

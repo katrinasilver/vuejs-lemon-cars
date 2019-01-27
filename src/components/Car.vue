@@ -1,28 +1,35 @@
 <template>
-  <div :class="[vin]">
-    <div class="jumbotron text-white mb-0" :style="{'background-image': `url('${main_img}')`}">
-      <div class="meta float-right rounded p-4 mb-3 mt-5">
+  <div :class="[vin]" >
+    <div class="jumbotron text-white m-0 p-0">
+      <img class="car-image" :src="showImage" :alt="product_name">
+      <div class="meta p-4 mb-0">
         <h2 class="display-5 text-warning">{{ product_name }}</h2>
         <h3><small class="text-white-50">Sale Price:</small>
           {{ discountedPrice.toLocaleString('en-IN', {style: 'currency', currency: 'USD'}) }}</h3>
 
         <p class="small">VIN: {{ vin }}</p>
-        <div class="interior-img">
-          <Picture class="d-flex justify-content-left mb-4"
-            :main_img="main_img"
-            :product_name="product_name"
-            :product_imgs="product_imgs"/>
+        <div class="interior-img mb-4">
+          <picture>
+            <img @click="getDisplayImage(-1)" :src="main_img" :alt="product_name" class="img-fluid img-thumbnail mr-2 mb-2" >
+            <img @click="getDisplayImage(index)" v-for="(img, index) in product_imgs" :key="index"
+            class="img-fluid img-thumbnail mr-2 mb-2"
+            :src="product_imgs[index]" :alt="product_name + index">
+          </picture>
         </div>
 
-        <button @click="toggleContent" class="btn btn-lg" :class="[ !toggle ? 'btn-warning' : 'btn-success' ]">
-          {{ toggle ? 'Back to Vehicle Specs' : 'Schedule a Test Drive'}}
+        <button @click="toggleContent" class="btn btn-lg mr-2 mb-2" :class="[ toggle ? 'btn-warning' : 'btn-success' ]">
+          {{ toggle ? 'See Vehicle Specs' : 'Schedule a Test Drive' }}
         </button>
 
+        <router-link class="btn btn-lg btn-success mb-2" to="/">Back to Main Page</router-link>
+
         <transition name="slideRight">
-          <Form v-if="toggle" v-cloak :vin="vin" :product_name="product_name"/>
+          <Form v-if="toggle" :vin="vin" :product_name="product_name"/>
           <Specs v-else
             :transmission="transmission"
             :downpayment="downpayment"
+            :tag_line="tag_line"
+            :description="description"
             :doors="doors"
             :type="type"
             :mileage="mileage"
@@ -31,17 +38,12 @@
             :price="price"/>
         </transition>
       </div>
-    </div>
-    <div class="box p-3">
-      <h4>{{ tag_line }}</h4>
-      <p class="content mt-2 hide-md">{{ description }}</p>
+
     </div>
   </div>
-
 </template>
 
 <script>
-import Picture from './Picture'
 import Form from './Form'
 import Specs from './Specs'
 import axios from 'axios'
@@ -49,7 +51,6 @@ import axios from 'axios'
 export default {
   name: 'Car',
   components: {
-    Picture,
     Form,
     Specs
   },
@@ -57,8 +58,8 @@ export default {
     return {
       id: '',
       product_name: '',
-      main_img: '',
       price: '',
+      main_img: '',
       mileage: '',
       description: '',
       financing: '',
@@ -71,6 +72,7 @@ export default {
       type: '',
       product_imgs: [],
       toggle: false,
+      showImage: ''
     }
   },
 
@@ -87,6 +89,10 @@ export default {
   methods: {
     toggleContent() {
       this.toggle = !this.toggle
+    },
+
+    getDisplayImage(index) {
+      return index !== -1 ? this.showImage = this.product_imgs[index] : this.showImage = this.main_img
     },
 
     async fetchOneCar() {
@@ -109,6 +115,7 @@ export default {
         car.downpayment = res.data.downpayment
         car.transmission = res.data.transmission
         car.product_imgs = res.data.product_imgs
+        car.showImage = res.data.main_img
 
       } catch(err) {
         console.log(err)
@@ -124,19 +131,39 @@ export default {
     background-size: cover;
     background-position: center;
     border-radius: 0;
-    height: fill-available;
+    position: relative;
 
-    @media only screen and (min-width: 575px) {
-      margin-top: -4rem;
+    .car-image {
+      width: fill-available;
+
+      @media only screen and (max-width: 992px) {
+        width: 100%;
+      }
+    }
+
+    .img-thumbnail {
+      cursor: pointer;
+      height: 100%;
+      max-width: 100px;
+      width: 100%;
     }
 
     .meta {
-      background: transparentize(#252525, .3);
+      background: #252525;
 
-      @media only screen and (min-width: 960px) {
+      @media only screen and (min-width: 1200px) {
+        background: transparentize(#252525, .3);
+        top: 3rem;
+        right: 3rem;
+        position: absolute;
         display: inline-block;
         max-width: 30%;
       }
+    }
+
+    .btn-warning:focus,
+    .btn-success:focus {
+      box-shadow: none;
     }
 
     hr {

@@ -1,14 +1,13 @@
 <template>
   <div class="home">
+    <header class="navbar navbar-expand-lg d-flex justify-content-center">
+      <router-link class="navbar-brand" to="/"><h2 class="mb-0 text-warning">Lemon Autos</h2></router-link>
+      <p class="mb-0 lead border-left border-muted text-white pr-3 pl-3">Selling your Dream Car at a sketchy lot nearby</p>
+      <input id="findCar" v-model="search" class="form-control m-sm-3" type="search" placeholder="Find the car of your fever dreams...">
+    </header>
+
     <div class="row p-0 m-0">
-
-      <div class="filters col-md-12 col-lg-3 p-3">
-        <form >
-          <input id="findCar" v-model="search" class="form-control mr-sm-2" type="search" placeholder="Find the car of your fever dreams...">
-        </form>
-      </div>
-
-      <div class="shadow-lg cars col-md-12 col-lg-9 row p-0 m-0">
+      <div class="cars col-sm-12 row p-0 m-0">
         <ProductGrid v-for="car in findCar" :key="car.id"
           :id="car.id"
           :main_img="car.main_img"
@@ -22,19 +21,18 @@
         />
       </div>
     </div>
+    <footer class="bg-dark text-muted p-4 text-center">&copy; 2019 Lemon Autos // Our cars are more than just lemons!</footer>
   </div>
 </template>
 
 <script>
 import ProductGrid from '@/components/ProductGrid'
-// import Search from '@/components/Search'
 import axios from 'axios'
 
 export default {
   name: 'home',
   components: {
     ProductGrid
-    // Search
   },
 
   data() {
@@ -49,10 +47,6 @@ export default {
   },
 
   computed: {
-    findLength() {
-      return this.findCar.length
-    },
-
     findCar() {
       return this.cars.filter(car =>
         Object.values(car).reduce((i, c) => i || (typeof c === 'string' && c.toLowerCase()
