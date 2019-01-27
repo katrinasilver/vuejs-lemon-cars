@@ -10,7 +10,7 @@
         <p class="small">VIN: {{ vin }}</p>
         <div class="interior-img mb-4">
           <picture>
-            <img @click="getDisplayImage(-1)" :src="main_img" :alt="product_name" class="img-fluid img-thumbnail mr-2 mb-2" >
+            <img @click="getDisplayImage()" :src="main_img" :alt="product_name" class="img-fluid img-thumbnail mr-2 mb-2" >
             <img @click="getDisplayImage(index)" v-for="(img, index) in product_imgs" :key="index"
             class="img-fluid img-thumbnail mr-2 mb-2"
             :src="product_imgs[index]" :alt="product_name + index">
@@ -92,7 +92,7 @@ export default {
     },
 
     getDisplayImage(index) {
-      return index !== -1 ? this.showImage = this.product_imgs[index] : this.showImage = this.main_img
+      return index !== undefined ? this.showImage = this.product_imgs[index] : this.showImage = this.main_img
     },
 
     async fetchOneCar() {
