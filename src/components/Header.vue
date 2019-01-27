@@ -1,23 +1,21 @@
 <template>
-  <header class="navbar navbar-expand-lg navbar-dark">
-    <router-link class="navbar-brand" to="/"><h3 class="mb-0">Lemon Autos</h3></router-link>
-    <p class="text-white mb-0 lead border-left border-white pl-3">Selling your Dream Car at a sketchy lot nearby</p>
+  <header class="navbar navbar-expand-lg d-flex justify-content-between">
+    <div class="d-flex align-items-center">
+      <router-link class="navbar-brand" to="/"><h2 class="mb-0 text-warning">Lemon Autos</h2></router-link>
+      <p class="mb-0 lead border-left border-muted text-white pl-3">Selling your Dream Car at a sketchy lot nearby</p>
+    </div>
   </header>
 </template>
 
 <script>
+
 export default {
   name: 'Header'
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 header.navbar {
-  background: #25292e;
-
-  @media only screen and (min-width: 575px) {
-    background: transparentize(#25292e, .3);
-    z-index: 1000;
-  }
+  background: #252525;
 }
 </style>

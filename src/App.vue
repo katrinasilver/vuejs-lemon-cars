@@ -1,42 +1,19 @@
 <template>
-  <div id="app">
+  <div id="app" class="bg-light">
     <Header />
-    <router-view :cars="cars"/>
+    <router-view />
     <footer class="bg-dark text-muted p-4 text-center">&copy; 2019 Lemon Autos // Our cars are more than just lemons!</footer>
   </div>
 </template>
 
 <script>
   import Header from '@/components/Header'
-  import axios from 'axios'
 
   export default {
     name: 'lemon-autos',
 
     components: {
       Header
-    },
-
-    data() {
-      return {
-        cars: []
-      }
-    },
-
-    created() {
-      this.fetchCars()
-    },
-
-    methods: {
-      async fetchCars() {
-        const url = `http://localhost:3000/cars`
-        try {
-          let response = await axios.get(url)
-          this.cars = response.data
-        } catch(err) {
-          console.log(err)
-        }
-      }
     }
   }
 </script>
@@ -52,4 +29,27 @@
   body {
     text-rendering: optimizeLegibility;
   }
+
+  .slideUp-enter,
+  .slideUp-leave-to {
+    transform: translateY(100px) rotate(0deg);
+    opacity: 0;
+  }
+
+  .slideUp-enter-active,
+  .slideUp-leave-active {
+    transition: all .3s ease;
+  }
+
+  .slideRight-leave-to,
+  .slideRight-enter {
+    transform: translateX(100px) rotate(0deg);
+    opacity: 0;
+  }
+
+  .slideRight-enter-active,
+  .slideRight-leave-active {
+    transition: all .3s ease;
+  }
+
 </style>

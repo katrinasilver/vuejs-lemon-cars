@@ -1,28 +1,15 @@
 <template>
   <div class="home">
-
-    <transition name="slideRight">
-      <Jumbotron class="mb-0" v-cloak v-for="car in cars.slice(0, 1)" :key="car.id"
-        :id="car.id"
-        :main_img="car.main_img"
-        :product_name="car.product_name"
-        :tag_line="car.tag_line"
-        :description="car.description"
-        :vin="car.vin"
-      />
-    </transition>
-
-    <Search />
-
     <div class="row p-0 m-0">
+
       <div class="filters col-md-12 col-lg-3 p-3">
-        <Filters />
+        <form >
+          <input id="findCar" v-model="search" class="form-control mr-sm-2" type="search" placeholder="Find the car of your fever dreams...">
+        </form>
       </div>
 
-      <div is="transition-group" name="slideUp" v-cloak
-      class="cars col-md-12 col-lg-9 row p-0 m-0">
-
-        <ProductGrid v-for="car in cars.slice(1, 16)" :key="car.id"
+      <div class="shadow-lg cars col-md-12 col-lg-9 row p-0 m-0">
+        <ProductGrid v-for="car in findCar" :key="car.id"
           :id="car.id"
           :main_img="car.main_img"
           :product_name="car.product_name"
@@ -33,53 +20,56 @@
           :discount="car.discount"
           :mileage="car.mileage"
         />
-
       </div>
-
     </div>
   </div>
 </template>
 
 <script>
-import Jumbotron from '@/components/Jumbotron'
 import ProductGrid from '@/components/ProductGrid'
-import Search from '@/components/Search'
-import Filters from '@/components/Filters'
+// import Search from '@/components/Search'
+import axios from 'axios'
 
 export default {
-  props: ['cars'],
   name: 'home',
   components: {
-    Jumbotron,
-    ProductGrid,
-    Search,
-    Filters
+    ProductGrid
+    // Search
+  },
+
+  data() {
+    return {
+      search: '',
+      cars: []
+    }
+  },
+
+  created() {
+    this.fetchCars()
+  },
+
+  computed: {
+    findLength() {
+      return this.findCar.length
+    },
+
+    findCar() {
+      return this.cars.filter(car =>
+        Object.values(car).reduce((i, c) => i || (typeof c === 'string' && c.toLowerCase()
+          .includes(this.search.toLowerCase())), false)
+      )
+    }
+  },
+
+  methods: {
+    async fetchCars() {
+      try {
+        let response = await axios.get(`http://localhost:3000/cars`)
+        this.cars = response.data
+      } catch(err) {
+        console.log(err)
+      }
+    }
   }
 }
 </script>
-
-<style lang="scss">
-
-  .slideUp-enter,
-  .slideUp-leave-to {
-    transform: translateY(150px) rotate(0deg);
-    opacity: 0;
-  }
-
-  .slideUp-enter-active,
-  .slideUp-leave-active {
-    transition: all .3s linear;
-  }
-
-  .slideRight-leave-to,
-  .slideRight-enter {
-    transform: translate(150px) rotate(0deg);
-    opacity: 0;
-  }
-
-  .slideRight-enter-active,
-  .slideRight-leave-active {
-    transition: all .3s ease;
-  }
-
-</style>
