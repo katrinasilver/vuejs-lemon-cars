@@ -156,8 +156,8 @@ export default {
         top: 3rem;
         right: 3rem;
         position: absolute;
-        display: inline-block;
-        max-width: 30%;
+        display: block;
+        width: 30%;
       }
     }
 

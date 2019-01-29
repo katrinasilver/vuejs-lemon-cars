@@ -1,6 +1,6 @@
 <template>
   <div class="test-drive">
-    <form v-show="!submitted" class="test-drive mt-4 was-validated">
+    <form v-show="!submitted" v-cloak class="test-drive mt-4 was-validated">
       <div class="form-group">
         <label for="name">Your Name</label>
         <input type="text" v-model="name" class="form-control" id="name" placeholder="enter your full name" required autofocus>
@@ -16,7 +16,11 @@
       <button type="submit" @click.prevent="process" class="btn btn-success mb-2 mr-2">Submit</button>
       <button type="reset" class="btn btn-success mb-2">Reset</button>
     </form>
-    <div v-show="submitted" v-cloak class="p-3">Thank you! Your appoint request for {{ product_name }} VIN #{{ vin }} has been submitted</div>
+    <transition name="slideUp">
+      <div v-show="submitted" v-cloak class="p-3">Your test drive request for {{ product_name }}
+        VIN #{{ vin }} has been submitted.
+      </div>
+    </transition>
   </div>
 </template>
 <script>
@@ -40,7 +44,7 @@ export default {
 
       setTimeout(() => {
         this.submitted = false
-      }, 2000)
+      }, 5000)
 
       this.name = ''
       this.email = ''
