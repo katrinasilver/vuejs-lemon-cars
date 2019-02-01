@@ -40,7 +40,6 @@
 <script>
 
 export default {
-  props:['search'],
   name: 'ProductGrid',
   props: {
     id: Number,
