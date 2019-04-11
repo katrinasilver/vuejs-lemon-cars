@@ -5,7 +5,7 @@
       <div class="meta p-4 mb-0">
         <h2 class="display-5 text-warning">{{ product_name }}</h2>
         <h3><small class="text-white-50">Sale Price:</small>
-          {{ discountedPrice.toLocaleString('en-IN', {style: 'currency', currency: 'USD'}) }}</h3>
+          {{ discountedPrice.toLocaleString('en-IN', {style: 'currency', currency: 'USD'}).replace('US', '') }}</h3>
 
         <p class="small">VIN: {{ vin }}</p>
         <div class="interior-img mb-4">
@@ -17,11 +17,11 @@
           </picture>
         </div>
 
-        <button @click="toggleContent" class="btn btn-lg mr-2 mb-2" :class="[ toggle ? 'btn-warning' : 'btn-success' ]">
+        <button @click="toggleContent" class="btn btn-md mr-2 mb-2" :class="[ toggle ? 'btn-warning' : 'btn-success' ]">
           {{ toggle ? 'See Vehicle Specs' : 'Schedule a Test Drive' }}
         </button>
 
-        <router-link class="btn btn-lg btn-success mb-2" to="/">Back to Main Page</router-link>
+        <router-link class="btn btn-md btn-success mb-2" to="/">Back to Main Page</router-link>
 
         <transition name="slideRight">
           <Form v-if="toggle" :vin="vin" :product_name="product_name"/>
@@ -99,7 +99,7 @@ export default {
       let car = this
       try {
         const customHeader = await axios.create({
-          baseURL: `http://localhost:3000/cars`,
+          baseURL: `https://lemoncars.herokuapp.com/cars`,
           timeout: 1000
         })
         const res = await customHeader(`/${(this.$route.params.id)}`)
