@@ -58,7 +58,7 @@ export default {
   methods: {
     async fetchCars() {
       try {
-        let response = await axios.get(`http://localhost:3000/cars`)
+        let response = await axios.get(`https://lemoncars.herokuapp.com/cars`)
         this.cars = response.data
       } catch(err) {
         console.log(err)

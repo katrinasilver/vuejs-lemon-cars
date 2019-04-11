@@ -14,7 +14,7 @@
         <div :style="{ 'text-decoration': 'line-through' }" class="card-text text-muted">
           {{ price.toLocaleString('en-IN', { style: 'currency', currency: 'USD'}) }}</div>
 
-        <h4 class="card-text text-danger">{{ discountedPrice.toLocaleString('en-IN', {style: 'currency', currency: 'USD'}) }}</h4>
+        <h4 class="card-text text-danger">{{ discountedPrice.toLocaleString('en-IN', {style: 'currency', currency: 'USD'}).replace('US', '') }}</h4>
 
         <div class="mb-3 d-flex justify-content-left align-items-center">
           <span v-if="discountedPrice < 2500" class="badge badge-danger mr-1">
@@ -42,7 +42,7 @@
 export default {
   name: 'ProductGrid',
   props: {
-    id: Number,
+    id: String,
     product_name : String,
     main_img : String,
     tag_line: String,
