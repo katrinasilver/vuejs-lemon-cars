@@ -42,7 +42,7 @@
 export default {
   name: 'ProductGrid',
   props: {
-    id: Number,
+    id: String,
     product_name : String,
     main_img : String,
     tag_line: String,

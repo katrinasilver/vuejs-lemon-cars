@@ -98,7 +98,11 @@ export default {
     async fetchOneCar() {
       let car = this
       try {
-        const res = await axios.get(`http://localhost:3000/cars/${this.$route.params.id}`)
+        const customHeader = await axios.create({
+          baseURL: `http://localhost:3000/cars`,
+          timeout: 1000
+        })
+        const res = await customHeader(`/${(this.$route.params.id)}`)
 
         car.id = res.data.id
         car.product_name = res.data.product_name
