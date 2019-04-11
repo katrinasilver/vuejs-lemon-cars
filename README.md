@@ -1,5 +1,8 @@
 # Lemon Autos | Vuejs Independent Study
 
+## Resource
+Moved to another [repo](https://github.com/katrinasilver/lemon-cars-json)
+
 ## Project setup
 ```
 npm install
